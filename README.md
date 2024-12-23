@@ -13,8 +13,10 @@ The project leverages **GANs** to transfigure simple sketch contours into visual
 ## 🛠️ System Architecture
 The architecture integrates:
 * **Generator Network**: Creates images from latent representations
-* **Discriminator Network**: Vakudates the realism of generated images
+* **Discriminator Network**: Validates the realism of generated images
 * **Pix2Pix Model**: Enhances sketch-image pair learning.
+
+
 ![image](https://github.com/user-attachments/assets/b44cd1f2-2ce9-4427-9204-c0e9d8ea068c)
 
 ## 🔧 Requirements
