@@ -35,7 +35,7 @@ The architecture integrates:
 ## ⚙️ Implementation Details
 ![image](https://github.com/user-attachments/assets/de07c5d8-6ba5-4f57-bfc7-f6c3dac4a72e)
 
-Data preprocessing, model architectural design and training procedures with different techniques serve as the core elements of implementation to provide stable and effective training for the model. This section analyzes the core operational components which enable cGAN to produce images from sketches and noise during the generation process.
+Data preprocessing, model architectural design and training procedures with different techniques serve as the core elements of implementation to provide stable and effective training for the model.
 
 1. **Data Preprocessing**: The dataset requires resizing and normalization steps followed by augmentation through random cropping to prepare it before training. The processing methods guarantee the model will receive diverse as well as standardized input.
 
