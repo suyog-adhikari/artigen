@@ -32,6 +32,19 @@ The architecture integrates:
 1. Develop a GAN-based module for realistic sketch-to-image translation
 2. Provide an interactive and user-friendly tool for image generation
 
+## ⚙️ Implementation Details
+![image](https://github.com/user-attachments/assets/de07c5d8-6ba5-4f57-bfc7-f6c3dac4a72e)
+
+Data preprocessing, model architectural design and training procedures with different techniques serve as the core elements of implementation to provide stable and effective training for the model. This section analyzes the core operational components which enable cGAN to produce images from sketches and noise during the generation process.
+
+1. **Data Preprocessing**: The dataset requires resizing and normalization steps followed by augmentation through random cropping to prepare it before training. The processing methods guarantee the model will receive diverse as well as standardized input.
+
+2. **Model Architecture**: The cGAN consists both generator and discriminator components. The generator generates synthetic images through up-sampling and concatenation operations and the discriminator uses down-sampling analysis to differentiate real from synthetic images with the aid of class labeling information.
+
+3. **Training Process**: The training process includes alternative operations for discriminator updates using real and fake images with their labels followed by generator updates through random noisy inputs and class labels. The loss functions include conditional elements which represent class-specific data.
+
+4. **Stability Techniques**: The model incorporates batch normalization alongside gradient penalty to enhance training stability which helps resolve mode collapse and vanishing gradients. The model is evaluated through relevant assessment metrics which measure both image quality and class conditioning performance.
+
 ## 📊 Results and Evaluation
 * Image synthesis demonstrated with **FID**, **MSE**, and **SSM** metrics.
 * Versatile GUI showcasing various object classes (e.g., animals, cars, landscapes)
